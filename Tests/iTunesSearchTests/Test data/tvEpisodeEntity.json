@@ -1,0 +1,43 @@
+{
+    "resultCount": 1,
+    "results": [
+    {
+    "wrapperType": "track",
+    "kind": "tv-episode",
+    "artistId": 681105851,
+    "collectionId": 681105853,
+    "trackId": 684028506,
+    "artistName": "Love/Hate",
+    "collectionName": "Love/Hate, Series 1 & 2",
+    "trackName": "Series 1, Episode 1",
+    "collectionCensoredName": "Love/Hate, Series 1 & 2",
+    "trackCensoredName": "Series 1, Episode 1",
+    "artistViewUrl": "https://itunes.apple.com/gb/tv-show/love-hate/id681105851?uo=4",
+    "collectionViewUrl": "https://itunes.apple.com/gb/tv-season/series-1-episode-1/id681105853?i=684028506&uo=4",
+    "trackViewUrl": "https://itunes.apple.com/gb/tv-season/series-1-episode-1/id681105853?i=684028506&uo=4",
+    "previewUrl": "https://video-ssl.itunes.apple.com/itunes-assets/Video124/v4/6d/53/d5/6d53d5e0-76c6-63ad-78c6-8b06a2f1173d/mzvf_459506051077392272.640x478.h264lc.U.p.m4v",
+    "artworkUrl30": "https://is5-ssl.mzstatic.com/image/thumb/Video6/v4/62/45/3c/62453c86-0ac3-f27d-921c-a4b387c49498/source/30x30bb.jpg",
+    "artworkUrl60": "https://is5-ssl.mzstatic.com/image/thumb/Video6/v4/62/45/3c/62453c86-0ac3-f27d-921c-a4b387c49498/source/60x60bb.jpg",
+    "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Video6/v4/62/45/3c/62453c86-0ac3-f27d-921c-a4b387c49498/source/100x100bb.jpg",
+    "collectionPrice": 13.99,
+    "trackPrice": 1.89,
+    "collectionHdPrice": 15.99,
+    "trackHdPrice": 2.49,
+    "releaseDate": "2013-07-24T07:00:00Z",
+    "collectionExplicitness": "notExplicit",
+    "trackExplicitness": "notExplicit",
+    "discCount": 1,
+    "discNumber": 1,
+    "trackCount": 10,
+    "trackNumber": 1,
+    "trackTimeMillis": 3070760,
+    "country": "GBR",
+    "currency": "GBP",
+    "primaryGenreName": "Drama",
+    "contentAdvisoryRating": "Caution",
+    "shortDescription": "Darren skipped Dublin when a gun was found in his house and he's been living for the past year in",
+    "longDescription": "Darren skipped Dublin when a gun was found in his house and he's been living for the past year in Spain. But he's homesick and a party for his brother's release from prison is the perfect excuse to go home."
+    }
+    ]
+}
+

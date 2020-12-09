@@ -1,0 +1,33 @@
+{
+    "resultCount": 1,
+    "results": [
+        {
+            "wrapperType": "track",
+            "kind": "feature-movie",
+            "trackId": 294015994,
+            "artistName": "Michael Crichton",
+            "trackName": "Westworld",
+            "trackCensoredName": "Westworld",
+            "trackViewUrl": "https://itunes.apple.com/gb/movie/westworld/id294015994?uo=4",
+            "previewUrl": "https://video-ssl.itunes.apple.com/itunes-assets/Video128/v4/2b/ff/c7/2bffc7b5-aadd-9264-79bf-a9a3e3996c72/mzvf_8261329898067388701.640x480.h264lc.U.p.m4v",
+            "artworkUrl30": "https://is4-ssl.mzstatic.com/image/thumb/Video/v4/b6/38/3e/b6383eb3-2960-84ef-6ba2-b4605c9f265a/source/30x30bb.jpg",
+            "artworkUrl60": "https://is4-ssl.mzstatic.com/image/thumb/Video/v4/b6/38/3e/b6383eb3-2960-84ef-6ba2-b4605c9f265a/source/60x60bb.jpg",
+            "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Video/v4/b6/38/3e/b6383eb3-2960-84ef-6ba2-b4605c9f265a/source/100x100bb.jpg",
+            "collectionPrice": 3.99,
+            "trackPrice": 3.99,
+            "trackRentalPrice": 3.49,
+            "collectionHdPrice": 3.99,
+            "trackHdPrice": 3.99,
+            "trackHdRentalPrice": 3.49,
+            "releaseDate": "1973-11-21T08:00:00Z",
+            "collectionExplicitness": "notExplicit",
+            "trackExplicitness": "notExplicit",
+            "trackTimeMillis": 5326080,
+            "country": "GBR",
+            "currency": "GBP",
+            "primaryGenreName": "Sci-Fi & Fantasy",
+            "contentAdvisoryRating": "15",
+            "longDescription": "In a futuristic resort, wealthy patrons can visit recreations of different time periods and experience their wildest fantasies with life-like robots. But when Richard Benjamin (\"Goodbye, Columbus\") opts for the wild west, he gets more than he bargained for when a gunslinger robot, portrayed by Academy Award-winner Yul Brynner (\"The King and I\", \"The Magnificent Seven\"), goes berserk. Written and directed by \"Jurassic Park\" author and \"E.R.\" creator Michael Crichton. With Emmy-winner James Brolin (\"Marcus Welby, M.D.\", \"Hotel\") and Dick Van Patten (TV's \"Eight is Enough\"). Followed by a sequel, \"Futureworld\"."
+        }
+    ]
+}
