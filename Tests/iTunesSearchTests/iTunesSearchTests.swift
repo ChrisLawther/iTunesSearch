@@ -118,6 +118,50 @@ final class iTunesSearchTests: XCTestCase {
         XCTAssertEqual(items["attribute"], "actorTerm")
     }
 
+    // MARK: - Failing requests
+
+    func testWhenRequestFails() {
+        let fetcher: DataFetcher = {_, completion in
+            completion(.failure(Networking.Error.unknown))
+        }
+
+        let requestReturned = expectation(description: "Request was completed")
+
+        iTunesSearch.search("foo", in: .all(nil, nil), using: fetcher) { result in
+            switch result {
+            case .success:
+                XCTFail("Should have reported failure")
+            case .failure:
+                break
+            }
+            requestReturned.fulfill()
+        }
+
+        wait(for: [requestReturned], timeout: 0)
+    }
+
+    func testWhenResponseIsntDecodable() {
+        let fetcher: DataFetcher = {_, completion in
+            completion(.success("wibble".data(using: .utf8)!))
+        }
+
+        let requestReturned = expectation(description: "Request was completed")
+
+        iTunesSearch.search("foo", in: .all(nil, nil), using: fetcher) { result in
+            switch result {
+            case .success:
+                XCTFail("Should have reported failure")
+            case .failure(_ as DecodingError):
+                break
+            case .failure(let error):
+                XCTFail("Should have been a decoding error, not \(error)")
+            }
+            requestReturned.fulfill()
+        }
+
+        wait(for: [requestReturned], timeout: 0)
+    }
+
     // MARK: -
 
     // :sigh: linux

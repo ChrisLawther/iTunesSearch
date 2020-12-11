@@ -13,7 +13,7 @@ public enum iTunesSearch {
     ///   - completion: A completion to pass the eventual result to
     public static func search(_ term: String,
                               in media: Media? = .all(nil, nil),
-                              using dataFetcher: DataFetcher = Networking.fetchData,
+                              using dataFetcher: DataFetcher = Networking.dataFetcher(),
                               completion: @escaping (Result<[SearchResult], Error>) -> Void) {
 
         var components = URLComponents(url: baseUrl, resolvingAgainstBaseURL: true)
