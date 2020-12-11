@@ -34,7 +34,7 @@ final class iTunesSearchTests: XCTestCase {
         wait(for: [searchReturned], timeout: 0)
     }
 
-    func testCanDecodeResponseWIthArtistEntity() throws {
+    func testCanDecodeResponseWithArtistEntity() throws {
         let fetcher = try Self.fetcher(returning: "artistEntity.json")
 
         let searchReturned = expectation(description: "Search returned")

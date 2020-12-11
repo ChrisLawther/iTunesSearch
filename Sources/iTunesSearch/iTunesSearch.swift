@@ -2,14 +2,8 @@ import Foundation
 
 // https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/Searching.html#//apple_ref/doc/uid/TP40017632-CH5-SW1
 
-public enum Networking {
-    public static func fetchData(from: URLRequest, completion: @escaping (Result<Data, Error>) -> Void) -> Void {
-
-    }
-}
 public enum iTunesSearch {
     private static let baseUrl = URL(string: "http://itunes.apple.com/search")!
-
 
     /// Perform a search
     /// - Parameters:
@@ -19,7 +13,7 @@ public enum iTunesSearch {
     ///   - completion: A completion to pass the eventual result to
     public static func search(_ term: String,
                               in media: Media? = .all(nil, nil),
-                              using dataFetcher: (URLRequest, @escaping (Result<Data, Error>) -> Void) -> Void = Networking.fetchData,
+                              using dataFetcher: DataFetcher = Networking.fetchData,
                               completion: @escaping (Result<[SearchResult], Error>) -> Void) {
 
         var components = URLComponents(url: baseUrl, resolvingAgainstBaseURL: true)
