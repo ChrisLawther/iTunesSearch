@@ -45,7 +45,11 @@ extension Media {
                                                                                   entity: Entity?,
                                                                                   attribute: Attribute?) -> [URLQueryItem] where Entity.RawValue == String,
                                                                                                                                  Attribute.RawValue == String {
-        var items = [URLQueryItem(name: "media", value: media)]
+        var items = [
+            URLQueryItem(name: "country", value: "GB"),
+            URLQueryItem(name: "media", value: media)
+        ]
+
         if entity != nil {
             items.append(URLQueryItem(name: "entity", value: entity!.rawValue))
         }

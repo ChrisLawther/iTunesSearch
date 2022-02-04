@@ -17,7 +17,7 @@ public enum iTunesSearch {
                               completion: @escaping (Result<[SearchResult], Error>) -> Void) {
 
         var components = URLComponents(url: baseUrl, resolvingAgainstBaseURL: true)
-        components?.queryItems = media?.queryItems
+        components?.queryItems = [URLQueryItem(name: "term", value: term)] + (media?.queryItems ?? []) 
 
         guard let url = components?.url else {
             return
@@ -43,6 +43,8 @@ private extension iTunesSearch {
         struct SearchResponse: Decodable {
             let results: [SearchResult]
         }
+
+        try? data.write(to: URL(fileURLWithPath: "/Users/chris/Desktop/lastSearch.json"))
 
         return Result.init {
             (try Self.decoder.decode(SearchResponse.self, from: data)).results
