@@ -25,6 +25,7 @@ extension URLSession: DataFetching {
                 completion(.failure(Networking.Error.unknown))
             }
         }
+        .resume()
     }
 }
 
