@@ -26,16 +26,16 @@
 import Foundation
 
 public struct Collection: Decodable {
-    let collectionType: String
-    let artistId: Int
-    let collectionId: Int
-    let artistName: String
-    let collectionName: String
-    let artistViewUrl: URL
-    let collectionViewUrl: URL
-    let artworkUrl60: URL
-    let artworkUrl100: URL
-    let description: String
+    public let collectionType: String
+    public let artistId: Int
+    public let collectionId: Int
+    public let artistName: String
+    public let collectionName: String
+    public let artistViewUrl: URL
+    public let collectionViewUrl: URL
+    public let artworkUrl60: URL
+    public let artworkUrl100: URL
+    public let description: String
 
     enum CodingKeys: String, CodingKey {
         case collectionType

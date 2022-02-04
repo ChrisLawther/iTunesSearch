@@ -12,11 +12,11 @@
 import Foundation
 
 public struct Artist: Decodable {
-    let name: String
-    let link: URL
-    let id: Int
-    let primaryGenre: String
-    let primaryGenreId: Int
+    public let name: String
+    public let link: URL
+    public let id: Int
+    public let primaryGenre: String
+    public let primaryGenreId: Int
 
     enum CodingKeys: String, CodingKey {
         case name = "artistName"

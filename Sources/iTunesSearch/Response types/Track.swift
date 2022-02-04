@@ -1,7 +1,7 @@
 import Foundation
 
 public struct Track: Decodable {
-    let kind: String    // enum?
-    let previewUrl: URL
-    let trackName: String
+    public let kind: String    // enum?
+    public let previewUrl: URL
+    public let trackName: String
 }
